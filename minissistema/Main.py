@@ -10,7 +10,7 @@ class Main:
             # RuleBaseMontarPC recebe dois parâmetros:
             # o primeiro é o nome da base de regras,
             # o segundo é a lista de variáveis-alvo (objetivos).
-            brMontarPC = RuleBaseMontarPC("Montar PC", "[gpu ram mobo]")
+            brMontarPC = RuleBaseMontarPC("Montar PC", ["gpu", "ram", "mobo"])
             self.app.add_rule_base(brMontarPC)
             self.app.menu()
         except Exception as e:
